@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# C++
+*.o
+sensor
+
+# Docker
+*.log
+*.pid
+*.sock
+
+# VSCode
+.vscode/

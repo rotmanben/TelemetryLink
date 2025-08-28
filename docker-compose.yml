@@ -1,0 +1,14 @@
+services:
+  sensor:
+    build: ./sensor
+    container_name: sensor
+    depends_on:
+      - processor
+    restart: unless-stopped
+
+  processor:
+    build: ./processor
+    container_name: processor
+    ports:
+      - "8050:8050"
+    restart: unless-stopped
